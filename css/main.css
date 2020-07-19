@@ -41,8 +41,8 @@ header {
     height: 100%;
     width: 100vw;
     z-index: 1;
-    background: url("../img/hero.jpg");
-    background-attachment: fixed;
+    background-image: url("../img/hero.jpg");
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
