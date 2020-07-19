@@ -421,20 +421,27 @@ footer {
       margin-bottom: 1rem; }
     header .showcase .showcase-text p {
       font-size: 0.25rem; }
-  .container .contact-me .section-title {
-    font-size: 1.5rem; }
-  .container .contact-me .contact-methods ul {
-    flex-direction: column; }
-    .container .contact-me .contact-methods ul li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .container .contact-me {
+    padding: 1rem; }
+    .container .contact-me .section-title {
+      font-size: 1.5rem; }
+    .container .contact-me .contact-methods ul {
       flex-direction: column; }
-      .container .contact-me .contact-methods ul li span {
-        margin-top: 1rem;
-        font-size: 0.9rem; }
-  .container .contact-me .contact-methods .social {
-    justify-content: space-between; }
+      .container .contact-me .contact-methods ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .container .contact-me .contact-methods ul li span {
+          margin-top: 1rem;
+          font-size: 0.9rem; }
+    .container .contact-me .contact-methods .social {
+      justify-content: space-between; }
+    .container .contact-me .contact-form {
+      width: 100%;
+      margin: 0 auto; }
+      .container .contact-me .contact-form .spam-filter {
+        max-width: 50%; }
   .container footer p {
     font-size: 0.3rem; } }
 
