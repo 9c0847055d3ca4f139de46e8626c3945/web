@@ -438,6 +438,7 @@ footer {
     .container .contact-me .contact-methods .social {
       justify-content: space-between; }
     .container .contact-me .contact-form {
+      padding: 0rem;
       width: 100%;
       margin: 0 auto; }
       .container .contact-me .contact-form .spam-filter {
