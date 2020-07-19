@@ -441,7 +441,8 @@ footer {
       width: 100%;
       margin: 0 auto; }
       .container .contact-me .contact-form .spam-filter {
-        max-width: 50%; }
+        max-width: 50%;
+        text-align: center; }
   .container footer p {
     font-size: 0.3rem; } }
 
