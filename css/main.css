@@ -274,20 +274,6 @@ header {
           .contact-me .contact-methods .contact-info .social i.fab:hover {
             transform: scale(1.2);
             color: #d72323; }
-      .contact-me .contact-methods .contact-info button {
-        display: inline-block;
-        width: 7rem;
-        padding: 1rem;
-        cursor: pointer;
-        border: none;
-        border-radius: 0.5rem;
-        margin: 2rem 1rem 0 0;
-        background-color: #d72323;
-        color: #f5eded;
-        transition: all 0.5s ease-in-out; }
-        .contact-me .contact-methods .contact-info button:hover {
-          background-color: #ab1c1c;
-          transform: scale(1.1); }
   .contact-me .contact-form {
     padding: 2rem;
     border-left: 2px solid rgba(62, 54, 54, 0.6); }

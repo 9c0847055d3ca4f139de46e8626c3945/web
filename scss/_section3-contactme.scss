@@ -41,25 +41,6 @@
                         color: $primary-hover;
                     }
                 }
-                
-            }
-
-            button {
-                display: inline-block;
-                width: 7rem;
-                padding: 1rem;
-                cursor: pointer;
-                border: none;
-                border-radius: 0.5rem;
-                margin: 2rem 1rem 0 0;
-                background-color: $primary-hover;
-                color: $primary-background-color;
-                transition: all 0.5s ease-in-out;
-
-                &:hover {
-                    background-color: darken($primary-hover,10%);
-                    transform: scale(1.1);
-                }
             }
         }
     }
