@@ -397,16 +397,19 @@ footer {
   .container .portfolio .projects .project-description {
     display: block;
     text-align: center; }
-  .container .contact-me .section-title {
-    font-size: 1.5rem; }
-  .container .contact-me .contact-methods li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .container .contact-me .contact-methods li span {
-      margin-top: 1rem;
-      font-size: 1rem; }
+  .container .contact-me {
+    width: 100%;
+    text-align: center; }
+    .container .contact-me .section-title {
+      font-size: 1.5rem; }
+    .container .contact-me .contact-methods li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .container .contact-me .contact-methods li span {
+        margin-top: 1rem;
+        font-size: 1rem; }
   .container footer p {
     font-size: 0.75rem; } }
 
