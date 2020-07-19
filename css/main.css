@@ -298,6 +298,8 @@ header {
       border-radius: 0.2rem;
       resize: vertical;
       margin: 1rem 0; }
+    .contact-me .contact-form .spam-filter {
+      margin-top: 1rem; }
     .contact-me .contact-form button {
       text-align: center;
       display: inline-block;
