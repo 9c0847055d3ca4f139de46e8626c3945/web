@@ -42,7 +42,7 @@ header {
     width: 100vw;
     z-index: 1;
     background-image: url("../img/hero.jpg");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -378,7 +378,8 @@ footer {
 @media screen and (max-width: 550px) {
   header .showcase {
     height: 100vh;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    background-attachment: scroll; }
     header .showcase .showcase-text {
       padding: 1rem; }
       header .showcase .showcase-text h1 {
