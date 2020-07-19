@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'utilities';
+@import 'header';
+@import 'section1-aboutme';
+@import 'section2-portfolio';
+@import 'section3-contactme';
+@import 'footer';
+@import 'media';
+
+// Global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: $primary-background-color;
+    scroll-behavior: smooth;
+    font-family: 'Fjalla One', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.highlight {
+    color: $primary-hover;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+
+
+

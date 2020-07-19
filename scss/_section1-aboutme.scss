@@ -1,0 +1,60 @@
+// Section 1 - About me
+
+.about-me {
+    margin-top: 4rem;
+    padding: 2rem;
+    @include flex-center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .section-title {
+        font-size: 2rem;
+        color: $secondary-color;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+    
+    .section-showcase {
+        margin: 2rem 0;
+        padding-bottom: 3rem;
+        @include flex-center;
+        width: 100%;
+        border-bottom: 3px solid rgba($secondary-color,0.6); 
+
+        .aboutme-text {
+            flex: 50%;
+            text-align: center;
+            @include flex-center;
+            flex-direction: column;
+            padding: 2rem;
+            p {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+            }
+
+            .skills-icons {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                cursor: pointer;
+
+                .icon-label {
+                    margin: 1rem;
+                    i.fab {
+                        font-size: 2rem;
+                        transition: all 1s ease-in-out;
+                        margin-bottom: 0.5rem;
+                        &:hover {
+                            transform: scale(1.2);
+                            color: $primary-hover;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+// About me end
