@@ -388,15 +388,17 @@ footer {
     font-size: 1.5rem; }
   .container .about-me .section-showcase p {
     font-size: 1.2rem; }
-  .container .portfolio .section-title {
-    font-size: 1.5rem; }
-  .container .portfolio .projects .project {
-    margin: 1rem 0 0 0; }
-    .container .portfolio .projects .project .project-overlay {
-      display: none; }
-  .container .portfolio .projects .project-description {
-    display: block;
-    text-align: center; }
+  .container .portfolio {
+    padding: 1rem; }
+    .container .portfolio .section-title {
+      font-size: 1.5rem; }
+    .container .portfolio .projects .project {
+      margin: 1rem 0 0 0; }
+      .container .portfolio .projects .project .project-overlay {
+        display: none; }
+    .container .portfolio .projects .project-description {
+      display: block;
+      text-align: center; }
   .container .contact-me {
     width: 100%;
     text-align: center; }
