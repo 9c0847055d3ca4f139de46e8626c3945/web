@@ -527,9 +527,6 @@ footer {
   .container .about-me .section-showcase p {
     font-size: 1.2rem;
   }
-  .container .portfolio {
-    padding: 1rem;
-  }
   .container .portfolio .section-title {
     font-size: 1.5rem;
   }
@@ -576,12 +573,18 @@ footer {
   header .showcase .showcase-text p {
     font-size: 0.25rem;
   }
+  .container .portfolio {
+    padding: 0.2rem;
+  }
   .container .contact-me {
     padding: 0.2rem;
     margin-bottom: 1rem;
   }
   .container .contact-me .section-title {
     font-size: 1.5rem;
+  }
+  .container .contact-me .contact-info {
+    margin: 1rem 0;
   }
   .container .contact-me .contact-methods ul {
     flex-direction: column;
