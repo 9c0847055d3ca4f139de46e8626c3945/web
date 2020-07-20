@@ -577,7 +577,8 @@ footer {
     font-size: 0.25rem;
   }
   .container .contact-me {
-    padding: 0rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
   }
   .container .contact-me .section-title {
     font-size: 1.5rem;
