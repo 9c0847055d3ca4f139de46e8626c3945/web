@@ -311,8 +311,11 @@ header .showcase .overlay {
   border-radius: 0.5rem;
   margin: 1rem 1rem 0 0;
   background-color: #d72323;
-  color: #f5eded;
   transition: all 0.5s ease-in-out;
+}
+
+.project-description .buttons button a {
+  color: #f5eded;
 }
 
 .project-description .buttons button:hover {
@@ -378,6 +381,12 @@ header .showcase .overlay {
 .contact-me .contact-form {
   padding: 2rem;
   border-left: 2px solid rgba(62, 54, 54, 0.6);
+}
+
+.contact-me .contact-form #error_message {
+  color: #d72323;
+  font-weight: bold;
+  margin: 1rem;
 }
 
 .contact-me .contact-form input, .contact-me .contact-form textarea {

@@ -48,6 +48,13 @@
     .contact-form {
         padding: 2rem;
         border-left: 2px solid rgba($secondary-color,0.6);
+
+        #error_message {
+            color: $primary-hover;
+            font-weight: bold;
+            margin: 1rem;
+        }
+
         input, textarea {
             width: 100%;
             padding: 0.8rem;
