@@ -18,97 +18,94 @@
 }
 
 @media screen and (max-width: 770px) {
-        header {
-            .nav {
-                position: fixed;
-                z-index:5;
-                .burger {
-                    margin-right: 1rem;
-                    visibility: visible;
-                    z-index: 5;
-                    transition: all 0.4s ease;
-                    &.close {
-                        .line1 {
-                            transform: rotate(-45deg) translate(-5px,6px);
-                            background-color: $primary-hover;
-                        }
-                        .line2 {
-                            opacity: 0;
-                        }
-                        .line3 {
-                            transform: rotate(45deg) translate(-4px,-5px);
-                            background-color: $primary-hover;
-                        }
-                    }
+    .nav {
+        position: fixed;
+        z-index:5;
+        .burger {
+            margin-right: 1rem;
+            visibility: visible;
+            z-index: 5;
+            transition: all 0.4s ease;
+            &.close {
+                .line1 {
+                    transform: rotate(-45deg) translate(-5px,6px);
+                    background-color: $primary-hover;
                 }
+                .line2 {
+                    opacity: 0;
+                }
+                .line3 {
+                    transform: rotate(45deg) translate(-4px,-5px);
+                    background-color: $primary-hover;
+                }
+            }
+        }
 
-                .nav-list {
-                    position: absolute;
-                    top: 5vh;
-                    right: 0;
-                    width: 40%;
-                    height: 95vh;
-                    background-color: rgba($secondary-color,0.9);
-                    flex-direction: column;
-                    z-index: 2;
-                    transform: translateX(100%);
+        .nav-list {
+            position: absolute;
+            top: 5vh;
+            right: 0;
+            width: 40%;
+            height: 95vh;
+            background-color: rgba($secondary-color,1);
+            flex-direction: column;
+            z-index: 2;
+            transform: translateX(100%);
 
-                    .nav-item {
+            .nav-item {
+                opacity: 0;
+            }
+
+            &.active {
+                transform: translateX(0%);
+                transition: all 0.4s ease;
+
+                @keyframes linksFadein {
+                    from{
                         opacity: 0;
-                    }
-
-                    &.active {
-                        transform: translateX(0%);
-                        transition: all 0.4s ease;
-
-                        @keyframes linksFadein {
-                            from{
-                                opacity: 0;
-                                transform: translateX(50px);
-                            } to {
-                                opacity: 1;
-                                transform: translateX(0px);
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-
-        .container {
-            .portfolio {
-                .projects {
-                    flex-direction: column;
-                    .project {
-                        max-width: auto;
-                        margin: 1rem auto;
-                    }
-                }
-            }
-    
-            .contact-me {
-                .contact-methods {
-                    flex-direction: column;
-    
-                    ul {
-                        display: flex;
-                        justify-content: space-around;
-                    }
-    
-                    .contact-form {
-                        margin-top: 0.8rem;;
-                        border: none;
+                        transform: translateX(50px);
+                    } to {
+                        opacity: 1;
+                        transform: translateX(0px);
                     }
                 }
             }
         }
+    }
+
+    .container {
+        .portfolio {
+            .projects {
+                flex-direction: column;
+                .project {
+                    max-width: auto;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    
+        .contact-me {
+            .contact-methods {
+                flex-direction: column;
+    
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                }
+    
+                .contact-form {
+                    margin-top: 0.8rem;;
+                    border: none;
+                }
+            }
+        }
+    }
 }
 
     @media screen and (max-width: 550px) {
         header {
             .showcase {
-                height: 100vh;
+                height: 80vh;
                 padding-top: 1rem;
                 background-attachment: scroll;
                 .showcase-text {
