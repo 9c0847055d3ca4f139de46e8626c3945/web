@@ -29,8 +29,8 @@ const validate = () => {
     error_message.style.padding = "10px";
     
     let text;
-    if(name.length < 4 && name.includes(' ')){
-        text = "Please enter valid full name";
+    if(name.length < 4 && !name.includes(' ')){
+        text = "Please enter valid name";
         error_message.innerHTML = text;
         return false;
     }
