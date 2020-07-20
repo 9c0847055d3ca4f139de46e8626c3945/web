@@ -34,8 +34,8 @@ const validate = () => {
         error_message.innerHTML = text;
         return false;
     }
-    if(isNaN(phone) || phone.length != 10){
-        text = "Please Enter valid Phone Number";
+    if(isNaN(phone)){
+        text = "Please enter valid phone number";
         error_message.innerHTML = text;
         return false;
     }
