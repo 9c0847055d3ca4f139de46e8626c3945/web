@@ -6,6 +6,7 @@
     @include flex-center;
     flex-direction: column;
     flex-wrap: wrap;
+    border-bottom: 3px solid rgba($secondary-color,0.6); 
 
     .section-title {
         font-size: 2rem;
@@ -16,10 +17,8 @@
     
     .section-showcase {
         margin: 2rem 0;
-        padding-bottom: 3rem;
         @include flex-center;
         width: 100%;
-        border-bottom: 3px solid rgba($secondary-color,0.6); 
 
         .aboutme-text {
             flex: 50%;

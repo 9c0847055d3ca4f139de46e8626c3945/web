@@ -101,6 +101,7 @@ header .showcase .overlay {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  border-bottom: 3px solid rgba(62, 54, 54, 0.6);
 }
 
 .about-me .section-title {
@@ -112,12 +113,10 @@ header .showcase .overlay {
 
 .about-me .section-showcase {
   margin: 2rem 0;
-  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 3px solid rgba(62, 54, 54, 0.6);
 }
 
 .about-me .section-showcase .aboutme-text {
@@ -160,12 +159,14 @@ header .showcase .overlay {
 }
 
 .portfolio {
+  margin-top: 4rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  border-bottom: 3px solid rgba(62, 54, 54, 0.6);
 }
 
 .portfolio .section-title {
@@ -181,12 +182,11 @@ header .showcase .overlay {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  border-bottom: 3px solid rgba(62, 54, 54, 0.6);
   padding-bottom: 2rem;
 }
 
 .portfolio .projects .project {
-  width: 30rem;
+  width: 35rem;
   max-width: 100%;
   position: relative;
   margin: 1rem 0.5rem;
@@ -324,6 +324,7 @@ header .showcase .overlay {
 }
 
 .contact-me {
+  margin: 4rem 0 2rem 0;
   padding: 2rem;
   display: flex;
   justify-content: center;

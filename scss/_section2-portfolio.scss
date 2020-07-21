@@ -1,11 +1,13 @@
 //Section 2 Portfolio section
 
 .portfolio {
+    margin-top: 4rem;
     padding: 2rem;
     @include flex-center;
     flex-direction: column;
     flex-wrap: wrap;
-
+    border-bottom: 3px solid rgba($secondary-color,0.6);
+    
     .section-title {
         font-size: 2rem;
         color: $secondary-color;
@@ -19,11 +21,10 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        border-bottom: 3px solid rgba($secondary-color,0.6);
         padding-bottom: 2rem;
         
         .project {
-            width: 30rem;
+            width: 35rem;
             max-width: 100%;
             position: relative;
             margin: 1rem 0.5rem;;
