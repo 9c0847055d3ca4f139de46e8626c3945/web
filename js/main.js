@@ -44,7 +44,7 @@ const validate = () => {
         error_message.innerHTML = text;
         return false;
     }
-    if(subject.length <= 140){
+    if(subject.length <= 20){
         text = "Please Enter More Than 140 Characters";
         error_message.innerHTML = text;
         return false;
@@ -52,3 +52,17 @@ const validate = () => {
     alert("Form Submitted Successfully!");
     return true;
 }
+
+// Email form and phone number activation
+
+const mailIcon = document.getElementById("email-method");
+const phoneIcon = document.getElementById("phone-method")
+const contactForm = document.querySelector(".contact-form");
+const phoneNumber = document.querySelector(".detail");
+
+mailIcon.addEventListener('click',()=>{
+    contactForm.classList.toggle("active")
+})
+phoneIcon.addEventListener('click',()=>{
+    phoneNumber.classList.toggle("active")
+})

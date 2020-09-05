@@ -104,8 +104,11 @@
 
     @media screen and (max-width: 550px) {
         header {
+            max-height: 450px;
+            min-height: auto;
+            position: static;
             .showcase {
-                height: 80vh;
+                height: 100%;
                 padding-top: 1rem;
                 background-attachment: scroll;
                 .showcase-text {
@@ -120,15 +123,18 @@
             }
         }
 
-        .container {
             .about-me {
-                .section-title {
-                    margin-top: 20vh;
-                    font-size: 1.5rem;
-                }
-                .section-showcase {
-                    p {
-                        font-size: 1.2rem;
+                height: auto;
+                .container {
+                    padding: 1rem;
+                    .section-title {
+                        font-size: 1.4rem;
+                        margin: 0;
+                    }
+                    .section-showcase {
+                        p {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -148,6 +154,12 @@
                     .project-description {
                         display: block;
                         text-align: center;
+
+                        .buttons {
+                            button {
+                                min-width: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -175,7 +187,6 @@
                     font-size: 0.75rem;
                 }
             }
-        }
     }
 
     @media screen and (max-width: 400px) {
@@ -194,25 +205,21 @@
                 }
             }
         }
-
-        .container {
-
             .portfolio {
                 padding: 0.2rem;
             }
             
             .contact-me {
-                padding: 0.2rem;
-                margin-bottom: 1rem;
+                height: auto;
+                padding: 1rem;
                 
                 .section-title {
                     font-size: 1.5rem;
                 }
 
                 .contact-info {
-                    margin: 1rem 0;
-                }
-                .contact-methods {
+                    height: auto;
+                    flex-direction: column;
                     ul {
                         flex-direction: column;
                         li {
@@ -225,11 +232,15 @@
                         }
                     }
                     .social {
-                        justify-content: space-between;
+                        flex-direction: column;
+                        justify-content: space-around;
+
+                        i.fab {
+                            margin-bottom: 2rem;
+                        }
                     }
                 }
                 .contact-form {
-                    padding: 0rem;
                     width: 100%;
                     margin: 0 auto;
 
@@ -237,12 +248,14 @@
                         max-width: 50%;
                         text-align: center;
                     }
+                    button {
+                        min-width: 100%;
+                    }
                 }
             }
             footer {
                 p {
-                    font-size: 0.3rem;
+                    font-size: 1rem;
                 }
             }
-        }
     }

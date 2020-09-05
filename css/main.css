@@ -47,7 +47,7 @@
 }
 
 header {
-  height: 60vh;
+  height: 1000px;
   width: 100vw;
   border-bottom: 3px solid rgba(62, 54, 54, 0.6);
 }
@@ -94,7 +94,8 @@ header .showcase .overlay {
 }
 
 .about-me {
-  margin-top: 4rem;
+  background-color: #d72323;
+  color: #f5eded;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -102,13 +103,14 @@ header .showcase .overlay {
   flex-direction: column;
   flex-wrap: wrap;
   border-bottom: 3px solid rgba(62, 54, 54, 0.6);
+  height: 500px;
 }
 
 .about-me .section-title {
   font-size: 2rem;
-  color: #3e3636;
+  color: #f5eded;
   text-transform: capitalize;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .about-me .section-showcase {
@@ -149,17 +151,15 @@ header .showcase .overlay {
 
 .about-me .section-showcase .aboutme-text .skills-icons .icon-label i.fab {
   font-size: 2rem;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 0.5rem;
 }
 
 .about-me .section-showcase .aboutme-text .skills-icons .icon-label i.fab:hover {
   transform: scale(1.2);
-  color: #d72323;
 }
 
 .portfolio {
-  margin-top: 4rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -324,18 +324,18 @@ header .showcase .overlay {
 }
 
 .contact-me {
-  margin: 4rem 0 2rem 0;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #d72323;
+  color: #f5eded;
 }
 
 .contact-me .section-title {
   font-size: 2rem;
-  color: #3e3636;
   text-transform: capitalize;
   margin-bottom: 2rem;
 }
@@ -344,31 +344,68 @@ header .showcase .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.contact-me .contact-methods ul {
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-me .contact-methods .contact-info {
-  flex: 30%;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-around;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-me .contact-methods .contact-info .contact-method {
   margin: 1rem;
   font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-me .contact-methods .contact-info .contact-method i {
+  font-size: 2rem;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-me .contact-methods .contact-info .contact-method i:hover {
+  transform: scale(1.2);
+}
+
+.contact-me .contact-methods .contact-info .contact-method span {
+  margin: 1rem;
+  display: none;
+  background-color: #f5eded;
+  color: #3e3636;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+
+.contact-me .contact-methods .contact-info .contact-method span.active {
+  display: block;
+  transition: all 0.5s ease;
 }
 
 .contact-me .contact-methods .contact-info .social {
   margin-top: 1rem;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .contact-me .contact-methods .contact-info .social i.fab {
+  color: #f5eded;
   font-size: 2rem;
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -376,12 +413,14 @@ header .showcase .overlay {
 
 .contact-me .contact-methods .contact-info .social i.fab:hover {
   transform: scale(1.2);
-  color: #d72323;
 }
 
 .contact-me .contact-form {
   padding: 2rem;
-  border-left: 2px solid rgba(62, 54, 54, 0.6);
+  background-color: #3e3636;
+  border: 2px solid rgba(62, 54, 54, 0.6);
+  border-radius: 10px;
+  display: none;
 }
 
 .contact-me .contact-form #error_message {
@@ -390,13 +429,19 @@ header .showcase .overlay {
   margin: 1rem;
 }
 
+.contact-me .contact-form input, .contact-me .contact-form textarea::placeholder {
+  font-size: 1rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+
 .contact-me .contact-form input, .contact-me .contact-form textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #d72323;
+  border: 1px solid #3e3636;
   border-radius: 0.2rem;
   resize: vertical;
   margin: 1rem 0;
+  outline: 2px solid #d72323;
 }
 
 .contact-me .contact-form .spam-filter {
@@ -420,6 +465,10 @@ header .showcase .overlay {
 .contact-me .contact-form button button:hover {
   background-color: #ab1c1c;
   transform: scale(1.1);
+}
+
+.contact-me .contact-form.active {
+  display: block;
 }
 
 footer {
@@ -516,8 +565,13 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  header {
+    max-height: 450px;
+    min-height: auto;
+    position: static;
+  }
   header .showcase {
-    height: 80vh;
+    height: 100%;
     padding-top: 1rem;
     background-attachment: scroll;
   }
@@ -530,44 +584,53 @@ footer {
   header .showcase .showcase-text p {
     font-size: 0.75rem;
   }
-  .container .about-me .section-title {
-    margin-top: 20vh;
+  .about-me {
+    height: auto;
+  }
+  .about-me .container {
+    padding: 1rem;
+  }
+  .about-me .container .section-title {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .about-me .container .section-showcase p {
+    font-size: 1rem;
+  }
+  .portfolio .section-title {
     font-size: 1.5rem;
   }
-  .container .about-me .section-showcase p {
-    font-size: 1.2rem;
-  }
-  .container .portfolio .section-title {
-    font-size: 1.5rem;
-  }
-  .container .portfolio .projects .project {
+  .portfolio .projects .project {
     margin: 1rem 0 0 0;
   }
-  .container .portfolio .projects .project .project-overlay {
+  .portfolio .projects .project .project-overlay {
     display: none;
   }
-  .container .portfolio .projects .project-description {
+  .portfolio .projects .project-description {
     display: block;
     text-align: center;
   }
-  .container .contact-me {
+  .portfolio .projects .project-description .buttons button {
+    min-width: 100%;
+  }
+  .contact-me {
     width: 100%;
     text-align: center;
   }
-  .container .contact-me .section-title {
+  .contact-me .section-title {
     font-size: 1.5rem;
   }
-  .container .contact-me .contact-methods li {
+  .contact-me .contact-methods li {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .container .contact-me .contact-methods li span {
+  .contact-me .contact-methods li span {
     margin-top: 1rem;
     font-size: 1rem;
   }
-  .container footer p {
+  footer p {
     font-size: 0.75rem;
   }
 }
@@ -583,46 +646,53 @@ footer {
   header .showcase .showcase-text p {
     font-size: 0.25rem;
   }
-  .container .portfolio {
+  .portfolio {
     padding: 0.2rem;
   }
-  .container .contact-me {
-    padding: 0.2rem;
-    margin-bottom: 1rem;
+  .contact-me {
+    height: auto;
+    padding: 1rem;
   }
-  .container .contact-me .section-title {
+  .contact-me .section-title {
     font-size: 1.5rem;
   }
-  .container .contact-me .contact-info {
-    margin: 1rem 0;
-  }
-  .container .contact-me .contact-methods ul {
+  .contact-me .contact-info {
+    height: auto;
     flex-direction: column;
   }
-  .container .contact-me .contact-methods ul li {
+  .contact-me .contact-info ul {
+    flex-direction: column;
+  }
+  .contact-me .contact-info ul li {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .container .contact-me .contact-methods ul li span {
+  .contact-me .contact-info ul li span {
     margin-top: 1rem;
     font-size: 0.9rem;
   }
-  .container .contact-me .contact-methods .social {
-    justify-content: space-between;
+  .contact-me .contact-info .social {
+    flex-direction: column;
+    justify-content: space-around;
   }
-  .container .contact-me .contact-form {
-    padding: 0rem;
+  .contact-me .contact-info .social i.fab {
+    margin-bottom: 2rem;
+  }
+  .contact-me .contact-form {
     width: 100%;
     margin: 0 auto;
   }
-  .container .contact-me .contact-form .spam-filter {
+  .contact-me .contact-form .spam-filter {
     max-width: 50%;
     text-align: center;
   }
-  .container footer p {
-    font-size: 0.3rem;
+  .contact-me .contact-form button {
+    min-width: 100%;
+  }
+  footer p {
+    font-size: 1rem;
   }
 }
 
@@ -658,4 +728,5 @@ a {
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
+  text-align: center;
 }

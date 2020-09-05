@@ -1,45 +1,78 @@
 // Section 3 Contact me
 .contact-me {
-    margin: 4rem 0 2rem 0;
     padding: 2rem;
     @include flex-center;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: $primary-hover;
+    color: $primary-background-color;
 
     .section-title {
         font-size: 2rem;
-        color: $secondary-color;
         text-transform: capitalize;
         margin-bottom: 2rem;
     }
 
     .contact-methods {
         @include flex-center;
+        flex-direction: column;
+        ul {
+            width: 50%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around
+        }
 
         .contact-info {
-            flex: 30%;
-            @include flex-center;
-            flex-direction: column;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             text-align: center;
+            margin-bottom: 2rem;
             .contact-method {
                 margin: 1rem;
                 font-size: 1.3rem;
+                @include flex-center;
+                flex-direction: column;
+
+                i {
+                    font-size: 2rem;
+                    transition: all 1s ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                span {
+                    margin: 1rem;
+                    display: none;
+                    background-color: $primary-background-color;
+                    color: $secondary-color;
+                    padding: 1rem 1.5rem;
+                    border-radius: 5px;
+                    &.active {
+                        display: block;
+                        transition: all 0.5s ease;
+                    }
+                }
             }
 
             .social {
-                margin-top: 1rem;;
-                width: 60%;
+                margin-top: 1rem;
+                width: 50%;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 i.fab {
+                    color: $primary-background-color;
                     font-size: 2rem;
                     transition: all 1s ease-in-out;
                     cursor: pointer;
 
                     &:hover {
                         transform: scale(1.2);
-                        color: $primary-hover;
                     }
                 }
             }
@@ -48,21 +81,29 @@
 
     .contact-form {
         padding: 2rem;
-        border-left: 2px solid rgba($secondary-color,0.6);
-
+        background-color: $secondary-color;
+        border: 2px solid rgba($secondary-color,0.6);
+        border-radius: 10px;
+        display: none;
         #error_message {
             color: $primary-hover;
             font-weight: bold;
             margin: 1rem;
         }
 
+        input, textarea::placeholder {
+            font-size: 1rem;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
         input, textarea {
             width: 100%;
             padding: 0.8rem;
-            border: 1px solid $primary-hover;
+            border: 1px solid $secondary-color;
             border-radius: 0.2rem;
             resize: vertical;
             margin: 1rem 0;
+            outline: 2px solid $primary-hover;
         }
 
         .spam-filter {
@@ -86,6 +127,9 @@
                 background-color: darken($primary-hover,10%);
                 transform: scale(1.1);
             }
+        }
+        &.active {
+            display: block;
         }
     }
 }
