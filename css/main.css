@@ -508,13 +508,16 @@ footer {
   .nav .burger.close .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
     background-color: #d72323;
+    transition: all 0.4s ease;
   }
   .nav .burger.close .line2 {
     opacity: 0;
+    transition: all 0.4s ease;
   }
   .nav .burger.close .line3 {
     transform: rotate(45deg) translate(-4px, -5px);
     background-color: #d72323;
+    transition: all 0.4s ease;
   }
   .nav .nav-list {
     position: absolute;
@@ -544,6 +547,12 @@ footer {
       transform: translateX(0px);
     }
   }
+  .about-me {
+    height: auto;
+  }
+  .about-me .container {
+    padding: 2rem;
+  }
   .container .portfolio .projects {
     flex-direction: column;
   }
@@ -566,9 +575,8 @@ footer {
 
 @media screen and (max-width: 550px) {
   header {
-    max-height: 450px;
+    max-height: 750px;
     min-height: auto;
-    position: static;
   }
   header .showcase {
     height: 100%;
@@ -588,7 +596,7 @@ footer {
     height: auto;
   }
   .about-me .container {
-    padding: 1rem;
+    padding: 2rem;
   }
   .about-me .container .section-title {
     font-size: 1.4rem;
@@ -646,8 +654,21 @@ footer {
   header .showcase .showcase-text p {
     font-size: 0.25rem;
   }
+  .about-me {
+    height: auto;
+    padding: 1rem;
+  }
+  .about-me .container {
+    padding: 1rem;
+  }
+  .about-me .container .aboutme-text {
+    padding: 1rem 0;
+  }
   .portfolio {
-    padding: 0.2rem;
+    padding: 1rem 0.2rem 0 0.2rem;
+  }
+  .portfolio .projects {
+    padding-bottom: 0;
   }
   .contact-me {
     height: auto;
@@ -655,6 +676,7 @@ footer {
   }
   .contact-me .section-title {
     font-size: 1.5rem;
+    margin-top: 1rem;
   }
   .contact-me .contact-info {
     height: auto;
@@ -677,7 +699,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
   }
-  .contact-me .contact-info .social i.fab {
+  .contact-me .contact-info .social i.fa-linkedin {
     margin-bottom: 2rem;
   }
   .contact-me .contact-form {
