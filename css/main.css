@@ -142,7 +142,6 @@ header .showcase .overlay {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  cursor: pointer;
 }
 
 .about-me .section-showcase .aboutme-text .skills-icons .icon-label {
