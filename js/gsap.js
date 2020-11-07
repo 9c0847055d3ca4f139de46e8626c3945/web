@@ -82,7 +82,7 @@ gsap.from('.contact-method', {
     scrollTrigger: '.contact-me .section-title',
     duration: 1,
     delay: 1,
-    y: "100px",
+    y: "50px",
     ease: 'bounce',
     opacity: 0,
 })
@@ -90,7 +90,7 @@ gsap.from('.social a', {
     scrollTrigger: '.contact-me .section-title',
     delay: 1,
     duration: 1,
-    y: "100px",
+    y: "50px",
     ease: 'bounce',
     opacity: 0,
 })
