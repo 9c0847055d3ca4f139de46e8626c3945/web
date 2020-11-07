@@ -1,14 +1,15 @@
 //Section 2 Portfolio section
 
 .portfolio {
-    padding: 2rem;
+    padding: 1rem;
     @include flex-center;
     flex-direction: column;
     flex-wrap: wrap;
     border-bottom: 3px solid rgba($secondary-color,0.6);
-    
+    min-height: 100vh;
     .section-title {
-        font-size: 2rem;
+        margin-top: 4rem;
+        font-size: 4vw;
         color: $secondary-color;
         text-transform: capitalize;
         margin-bottom: 2rem;

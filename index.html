@@ -1,19 +1,26 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-<!-- Google Fonts -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-<!-- Main CSS Stylesheet -->
+    <!-- Main CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>My portfolio | Nuh Mohamed Ali</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script src="./js/gsap.js" defer></script>
 </head>
+
 <body>
 
-<!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="nav">
         <div class="burger">
             <div class="line1"></div>
@@ -35,112 +42,80 @@
             </li>
         </ul>
     </nav>
-<!-- Navigation Bar End -->
+    <!-- Navigation Bar End -->
 
-<!-- Header -->
-    <header>
+    <!-- Header -->
+    <header class="header">
+        <div class="overlay">
+        </div>
         <div class="showcase">
-            <div class="overlay">
-            </div>
             <div class="showcase-text">
-                <h1>Hello World</h1>
-                <h3>My name is<span class="highlight"> Nuh Ali</span>, I'm a <span class="highlight">Frontend Developer</span> based in London.</h3>
+                <h1 class="showcase-title">Hello World !</h1>
+                <h3 class="showcase-inner-text">My name is<span class="highlight"> Nuh Ali</span>, I'm a <span
+                        class="highlight">Frontend Developer</span> based in London.</h3>
             </div>
         </div>
     </header>
-<!-- Header End -->
-<!-- Section 1 About me -->
-        <section class="about-me" id="about-me">
-            <div class="container">
-                <h2 class="section-title">
-                    About Me
-                </h2>
-                <div class="section-showcase">
-                    <div class="aboutme-text">
-                        <p>
-                            I’m a self-taught developer who is currently enrolled in a part time online computer science degree. Although my studies have so far focused on the front-end aspect of development, my goal is to become a full stack engineer. The technologies I currently work with are …
-                        </p>
-                        <div class="skills-icons">
-                            <div class="icon-label">
-                                <i class="fab fa-html5"></i>
-                                <h4>HTML5</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-css3-alt"></i>
-                                <h4>CSS</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-js-square"></i>
-                                <h4>JavaScript</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-react"></i>
-                                <h4>React</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-sass"></i>
-                                <h4>SASS</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-bootstrap"></i>
-                                <h4>Bootstrap</h4>
-                            </div>
-                            <div class="icon-label">
-                                <i class="fab fa-git-alt"></i>
-                                <h4>Git</h4>
-                            </div>
+    <!-- Header End -->
+    <!-- Section 1 About me -->
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <h2 class="section-title">
+                About Me
+            </h2>
+            <div class="section-showcase">
+                <div class="aboutme-text">
+                    <p>
+                        I’m a self-taught developer who is currently enrolled in a part time online computer science
+                        degree. Although my studies have so far focused on the front-end aspect of development, my goal
+                        is to become a full stack engineer. The technologies I currently work with are …
+                    </p>
+                    <div class="skills-icons">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-sass"></i>
+                            <h4>SASS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-bootstrap"></i>
+                            <h4>Bootstrap</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-<!--Section 1 About Me End  -->
-<!-- Section 2 Portfolio Start  -->
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2 class="section-title">
-                    My Portfolio
-                </h2>
-                <div class="projects">
+        </div>
+    </section>
+    <!--Section 1 About Me End  -->
+    <!-- Section 2 Portfolio Start  -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">
+                My Portfolio
+            </h2>
+            <div class="projects">
                 <!-- Insanity Gym -->
-                    <div class="project">
-                        <img src="img/gym.jpg" alt="">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    Insanity
-                                    Gym
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h4>CSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-sass"></i>
-                                    <h4>SASS</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="https://github.com/NuhAli/Insanity-Gym--Project1/tree/master" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="https://nuhali.github.io/Insanity-Gym--Project1/home.html" target="_blank">Live Version</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-description">
+                <div class="project">
+                    <img src="img/gym.jpg" alt="">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
                                 Insanity
@@ -167,51 +142,56 @@
                         </div>
                         <div class="buttons">
                             <button class="top">
-                                <a href="https://github.com/NuhAli/Insanity-Gym--Project1/tree/master" target="_blank">See Code</a>
+                                <a href="https://github.com/NuhAli/Insanity-Gym--Project1/tree/master"
+                                    target="_blank">See Code</a>
                             </button>
                             <button class="top">
-                                <a href="https://nuhali.github.io/Insanity-Gym--Project1/home.html" target="_blank">Live Version</a>
+                                <a href="https://nuhali.github.io/Insanity-Gym--Project1/home.html" target="_blank">Live
+                                    Version</a>
                             </button>
                         </div>
                     </div>
-                    <!-- Hello Fresh clone-->
-                    <div class="project">
-                        <img src="img/hellofresh.jpg" alt="hellofresh">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    HelloFresh.com - Homepage clone
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h4>CSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-sass"></i>
-                                    <h4>SASS</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="https://github.com/NuhAli/Hello-Fresh-Clone---Project-4" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="https://nuhali.github.io/Hello-Fresh-Clone---Project-4/home.html" target="_blank">Live Version</a>
-                                </button>
-                            </div>
+                </div>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            Insanity
+                            Gym
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-sass"></i>
+                            <h4>SASS</h4>
                         </div>
                     </div>
-                    <div class="project-description">
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="https://github.com/NuhAli/Insanity-Gym--Project1/tree/master" target="_blank">See
+                                Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="https://nuhali.github.io/Insanity-Gym--Project1/home.html" target="_blank">Live
+                                Version</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Hello Fresh clone-->
+                <div class="project">
+                    <img src="img/hellofresh.jpg" alt="hellofresh">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
                                 HelloFresh.com - Homepage clone
@@ -237,54 +217,58 @@
                         </div>
                         <div class="buttons">
                             <button class="top">
-                                <a href="https://github.com/NuhAli/Hello-Fresh-Clone---Project-4" target="_blank">See Code</a>
+                                <a href="https://github.com/NuhAli/Hello-Fresh-Clone---Project-4" target="_blank">See
+                                    Code</a>
                             </button>
                             <button class="top">
-                                <a href="https://nuhali.github.io/Hello-Fresh-Clone---Project-4/home.html" target="_blank">Live Version</a>
+                                <a href="https://nuhali.github.io/Hello-Fresh-Clone---Project-4/home.html"
+                                    target="_blank">Live Version</a>
                             </button>
                         </div>
                     </div>
-                    <!-- To do App -->
-                    <div class="project">
-                        <img src="img/todo.jpg" alt="todo">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    React To Do List
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h4>CSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-react"></i>
-                                    <h4>React</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="https://github.com/NuhAli/ReactTodoList--Project-2" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="https://nuhali.github.io/ReactTodoList--Project-2" target="_blank">Live Version</a>
-                                </button>
-                            </div>
+                </div>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            HelloFresh.com - Homepage clone
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-sass"></i>
+                            <h4>SASS</h4>
                         </div>
                     </div>
-                    <div class="project-description">
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="https://github.com/NuhAli/Hello-Fresh-Clone---Project-4" target="_blank">See
+                                Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="https://nuhali.github.io/Hello-Fresh-Clone---Project-4/home.html"
+                                target="_blank">Live Version</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- To do App -->
+                <div class="project">
+                    <img src="img/todo.jpg" alt="todo">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
-                                React To Do App
+                                React To Do List
                             </p>
                         </div>
                         <div class="stack">
@@ -307,51 +291,53 @@
                         </div>
                         <div class="buttons">
                             <button class="top">
-                                <a href="https://github.com/NuhAli/ReactTodoList--Project-2" target="_blank">See Code</a>
+                                <a href="https://github.com/NuhAli/ReactTodoList--Project-2" target="_blank">See
+                                    Code</a>
                             </button>
                             <button class="top">
-                                <a href="https://nuhali.github.io/ReactTodoList--Project-2" target="_blank">Live Version</a>
+                                <a href="https://nuhali.github.io/ReactTodoList--Project-2" target="_blank">Live
+                                    Version</a>
                             </button>
                         </div>
                     </div>
-                    <!-- Ark Macro Calculator -->
-                    <div class="project">
-                        <img src="img/arkveg.jpg" alt="todo">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    Ark Macronutrient Calculator
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h4>CSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-react"></i>
-                                    <h4>React</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="https://github.com/NuhAli/ArkFitnessCalculator--Project-3/tree/gh-pages" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="https://nuhali.github.io/ArkFitnessCalculator--Project-3/" target="_blank">Live Version</a>
-                                </button>
-                            </div>
+                </div>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            React To Do App
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
                         </div>
                     </div>
-                    <div class="project-description">
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="https://github.com/NuhAli/ReactTodoList--Project-2" target="_blank">See Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="https://nuhali.github.io/ReactTodoList--Project-2" target="_blank">Live Version</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Ark Macro Calculator -->
+                <div class="project">
+                    <img src="img/arkveg.jpg" alt="todo">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
                                 Ark Macronutrient Calculator
@@ -377,51 +363,55 @@
                         </div>
                         <div class="buttons">
                             <button class="top">
-                                <a href="https://github.com/NuhAli/ArkFitnessCalculator--Project-3/tree/gh-pages" target="_blank">See Code</a>
+                                <a href="https://github.com/NuhAli/ArkFitnessCalculator--Project-3/tree/gh-pages"
+                                    target="_blank">See Code</a>
                             </button>
                             <button class="top">
-                                <a href="https://nuhali.github.io/ArkFitnessCalculator--Project-3/" target="_blank">Live Version</a>
+                                <a href="https://nuhali.github.io/ArkFitnessCalculator--Project-3/" target="_blank">Live
+                                    Version</a>
                             </button>
                         </div>
                     </div>
-                    <!-- Night Scenz Photography -->
-                    <div class="project">
-                        <img src="img/night.jpg" alt="todo">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    Night Scenz Photography
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h4>CSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-react"></i>
-                                    <h4>React</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="https://github.com/NuhAli/NightScenz--Project-5" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="https://nuhali.github.io/NightScenz--Project-5/" target="_blank">Live Version</a>
-                                </button>
-                            </div>
+                </div>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            Ark Macronutrient Calculator
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
                         </div>
                     </div>
-                    <div class="project-description">
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="https://github.com/NuhAli/ArkFitnessCalculator--Project-3/tree/gh-pages"
+                                target="_blank">See Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="https://nuhali.github.io/ArkFitnessCalculator--Project-3/" target="_blank">Live
+                                Version</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Night Scenz Photography -->
+                <div class="project">
+                    <img src="img/night.jpg" alt="todo">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
                                 Night Scenz Photography
@@ -450,48 +440,49 @@
                                 <a href="https://github.com/NuhAli/NightScenz--Project-5" target="_blank">See Code</a>
                             </button>
                             <button class="top">
-                                <a href="https://nuhali.github.io/NightScenz--Project-5/" target="_blank">Live Version</a>
+                                <a href="https://nuhali.github.io/NightScenz--Project-5/" target="_blank">Live
+                                    Version</a>
                             </button>
                         </div>
                     </div>
-                    <!-- Fire Tunes -->
-                    <div class="project">
-                        <img src="img/FireTunes.jpg" alt="FireTunes">
-                        <div class="project-overlay">
-                            <div class="description">
-                                <p>
-                                    Fire Tunes - Powered by the Spotify API
-                                </p>
-                            </div>
-                            <div class="stack">
-                                <div class="icon-label">
-                                    <i class="fab fa-html5"></i>
-                                    <h4>HTML5</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-sass"></i>
-                                    <h4>SCSS</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-js-square"></i>
-                                    <h4>JavaScript</h4>
-                                </div>
-                                <div class="icon-label">
-                                    <i class="fab fa-react"></i>
-                                    <h4>React</h4>
-                                </div>
-                            </div>
-                            <div class="buttons">
-                                <button class="top">
-                                    <a href="#" target="_blank">See Code</a>
-                                </button>
-                                <button class="top">
-                                    <a href="#" target="_blank">Live Version</a>
-                                </button>
-                            </div>
+                </div>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            Night Scenz Photography
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
                         </div>
                     </div>
-                    <div class="project-description">
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="https://github.com/NuhAli/NightScenz--Project-5" target="_blank">See Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="https://nuhali.github.io/NightScenz--Project-5/" target="_blank">Live Version</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- Fire Tunes -->
+                <div class="project">
+                    <img src="img/FireTunes.jpg" alt="FireTunes">
+                    <div class="project-overlay">
                         <div class="description">
                             <p>
                                 Fire Tunes - Powered by the Spotify API
@@ -525,66 +516,102 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-<!-- Section 2 Portfolio End -->
-<!-- Section 3 Contact Me Start -->
-        <section class="contact-me" id="contact-me">
-            <div class="container">
-                <h2 class="section-title">
-                    Contact Me
-                </h2>
-                <div class="contact-methods">
-                    <div class="contact-info">
-                        <ul>
-                            <li class="contact-method" id="phone-method">
-                                <i class="fas fa-phone-square"></i>
-                                <span class="detail hidden"> +44-7534651923</span>
-                            </li>
-                            <li class="contact-method" id="email-method">
-                                <i class="fas fa-envelope-square"></i>
-                            </li>
-                        </ul>
-                        <div class="social">
-                            <a href="https://www.linkedin.com/in/nuh-ali-80a2121b2/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/NuhAli" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
+                <div class="project-description">
+                    <div class="description">
+                        <p>
+                            Fire Tunes - Powered by the Spotify API
+                        </p>
+                    </div>
+                    <div class="stack">
+                        <div class="icon-label">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-sass"></i>
+                            <h4>SCSS</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-js-square"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="icon-label">
+                            <i class="fab fa-react"></i>
+                            <h4>React</h4>
                         </div>
                     </div>
-                    <div class="contact-form">
-                        <div id="error_message">
-                        </div>
-                        <form method="POST" data-netlify="true" onsubmit="return validate()">
-                            <label for="name"></label>
-                            <input type="text" id="name" placeholder="Please enter your full name">
-                            <label for="email"></label>
-                            <input type="email" id="email" placeholder="Please enter your email">
-                            <label for="phone"></label>
-                            <input type="tel" id="phone" placeholder="Please enter your phone number">
-                            <label for="subject"></label>
-                            <textarea id="subject" name="subject" placeholder="Please write your message here" style="height:200px"></textarea>
-                            <div class="spam-filter">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <button class="submit">
-                                Send
-                            </button>
-                        </form>
+                    <div class="buttons">
+                        <button class="top">
+                            <a href="#" target="_blank">See Code</a>
+                        </button>
+                        <button class="top">
+                            <a href="#" target="_blank">Live Version</a>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-<!-- Section 3 Contact Me End -->
-<!-- Footer Start -->
+        </div>
+    </section>
+    <!-- Section 2 Portfolio End -->
+    <!-- Section 3 Contact Me Start -->
+    <section class="contact-me" id="contact-me">
+        <div class="container">
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+            <div class="contact-methods">
+                <div class="contact-info">
+                    <ul>
+                        <li class="contact-method" id="phone-method">
+                            <i class="fas fa-phone-square"></i>
+                            <span class="detail hidden"> +44-7534651923</span>
+                        </li>
+                        <li class="contact-method" id="email-method">
+                            <i class="fas fa-envelope-square"></i>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/nuh-ali-80a2121b2/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/NuhAli" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div id="error_message">
+                    </div>
+                    <form method="POST" data-netlify="true" onsubmit="return validate()">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Please enter your full name">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Please enter your email">
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" placeholder="Please enter your phone number">
+                        <label for="subject"></label>
+                        <textarea id="subject" name="subject" placeholder="Please write your message here"
+                            style="height:200px"></textarea>
+                        <div class="spam-filter">
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <button class="submit">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 3 Contact Me End -->
+    <!-- Footer Start -->
     <footer>
         <p>
             My Portfolio | Designed and Developed by <span class="highlight">Nuh Mohamed Ali</span>.
         </p>
     </footer>
-<!-- Footer End -->
+    <!-- Footer End -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

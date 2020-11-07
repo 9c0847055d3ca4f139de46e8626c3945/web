@@ -18,6 +18,16 @@ menuButton.addEventListener('click', () => {
     })
 });
 
+menuLinks.forEach(link => {
+    link.addEventListener('click',()=>{
+        menuButton.classList.toggle('close')
+        menu.classList.toggle('active')
+        menuLinks.forEach(link =>
+            link.style = ''
+        )
+    })
+})
+
 const validate = () => {
 
     let name = document.getElementById("name").value;
