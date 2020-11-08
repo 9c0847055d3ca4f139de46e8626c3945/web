@@ -14,12 +14,26 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background: $primary-background-color;
     scroll-behavior: smooth;
     font-family: 'Fjalla One', sans-serif;
     overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 ul {
@@ -42,7 +56,3 @@ a {
     margin: 0 auto;
     text-align: center;
 }
-
-
-
-

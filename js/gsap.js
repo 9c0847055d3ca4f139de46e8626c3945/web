@@ -83,7 +83,7 @@ gsap.from('.contact-method', {
     duration: 1,
     delay: 1,
     y: "50px",
-    ease: 'bounce',
+    ease: 'power2',
     opacity: 0,
 })
 gsap.from('.social a', {
@@ -91,6 +91,6 @@ gsap.from('.social a', {
     delay: 1,
     duration: 1,
     y: "50px",
-    ease: 'bounce',
+    ease: 'power2',
     opacity: 0,
 })
