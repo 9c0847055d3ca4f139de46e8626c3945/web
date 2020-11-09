@@ -1,6 +1,7 @@
 // Section 1 - About me
 
 .about-me {
+    scroll-snap-align: start;
     background-color: $primary-hover;
     color: $primary-background-color;
     padding: 2rem;
