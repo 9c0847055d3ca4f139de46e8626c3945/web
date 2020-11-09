@@ -1,21 +1,24 @@
 // Header animations
-const timelineHeader = gsap.timeline()
-timelineHeader
-    .to('.showcase-title', {
-        duration: 1,
-        y: "0",
-        ease: "bounce"
-    })
-    .from('.showcase-inner-text', {
-        duration: 1,
-        y: "100vh",
-        ease: 'bounce',
-        opacity: 0,
-    })
-    .from('.highlight', {
-        duration: 1.5,
-        color: 'white'
-    })
+window.addEventListener('load', () => {
+    const timelineHeader = gsap.timeline()
+    timelineHeader
+        .to('.showcase-title', {
+            duration: 1,
+            opacity: 1,
+            y: "0",
+            ease: "bounce"
+        })
+        .to('.showcase-inner-text', {
+            duration: 1,
+            opacity: 1,
+            y: "0",
+            ease: 'bounce',
+        })
+        .from('.highlight', {
+            duration: 1.5,
+            color: 'white'
+        })
+})
 
 // About me animations
 gsap.registerPlugin(ScrollTrigger)
@@ -70,7 +73,7 @@ gsap.from('.project-description', {
     stagger: 0.2
 })
 // Contact me animations
-gsap.from('.contact-me .section-title',{
+gsap.from('.contact-me .section-title', {
     scrollTrigger: '.contact-me .section-title',
     duration: 1,
     y: '50px',

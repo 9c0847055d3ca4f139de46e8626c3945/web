@@ -89,11 +89,14 @@ header .showcase .showcase-text {
 
 header .showcase .showcase-text h1 {
   transform: translateY(-100vh);
+  opacity: 0;
   margin-bottom: 1rem;
   font-size: 6vw;
 }
 
 header .showcase .showcase-text h3 {
+  transform: translateY(100vh);
+  opacity: 0;
   font-size: 1.8rem;
 }
 
@@ -173,7 +176,7 @@ header .showcase .showcase-text h3 {
 }
 
 .portfolio .section-title {
-  margin-top: 4rem;
+  margin-top: 5rem;
   font-size: 4vw;
   color: #3e3636;
   text-transform: capitalize;

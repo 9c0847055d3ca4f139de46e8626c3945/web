@@ -79,11 +79,14 @@ header {
             color: $primary-background-color;
             h1 {
                 transform: translateY(-100vh);
+                opacity: 0;
                 margin-bottom: 1rem;
                 font-size: 6vw;
             }
 
             h3 {
+                transform: translateY(100vh);
+                opacity: 0;
                 font-size: 1.8rem;
             }
         }
