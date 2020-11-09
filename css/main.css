@@ -88,12 +88,13 @@ header .showcase .showcase-text {
 }
 
 header .showcase .showcase-text h1 {
+  transform: translateY(-100vh);
   margin-bottom: 1rem;
   font-size: 6vw;
 }
 
 header .showcase .showcase-text h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .about-me {
