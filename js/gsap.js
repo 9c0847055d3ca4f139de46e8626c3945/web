@@ -25,7 +25,6 @@ gsap.registerPlugin(ScrollTrigger)
 gsap.from('.about-me .section-title', {
     scrollTrigger: '.about-me .section-title',
     duration: 1,
-    delay: 0.75,
     y: '50px',
     ease: 'power',
     opacity: 0,
@@ -34,7 +33,7 @@ gsap.from('.about-me .section-title', {
 gsap.from('.aboutme-text p', {
     scrollTrigger: '.aboutme-text',
     duration: 1,
-    delay: 1,
+    delay: 0.5,
     y: '50px',
     ease: 'power',
     opacity: 0,
@@ -44,7 +43,7 @@ gsap.from('.icon-label', {
     scrollTrigger: '.skills.icons',
     y: '50px',
     ease: 'power',
-    delay: 2,
+    delay: 1.5,
     opacity: 0,
     stagger: 0.2
 })
@@ -53,7 +52,7 @@ gsap.from('.icon-label', {
 gsap.from('.portfolio .section-title', {
     scrollTrigger: '.portfolio .section-title',
     duration: 1,
-    delay: 1,
+    delay: 0,
     y: '50px',
     ease: 'power',
     opacity: 0,
