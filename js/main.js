@@ -54,8 +54,8 @@ const validate = () => {
         error_message.innerHTML = text;
         return false;
     }
-    if (subject.length <= 20) {
-        text = "Please Enter More Than 140 Characters";
+    if (subject.length <= 10) {
+        text = "Please Enter More Than 10 Characters";
         error_message.innerHTML = text;
         return false;
     }
