@@ -50,7 +50,6 @@
 }
 
 header {
-  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -102,7 +101,6 @@ header .showcase .showcase-text h3 {
 }
 
 .about-me {
-  scroll-snap-align: start;
   background-color: #d72323;
   color: #f5eded;
   padding: 2rem;
@@ -167,7 +165,6 @@ header .showcase .showcase-text h3 {
 }
 
 .portfolio {
-  scroll-snap-align: start;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -333,7 +330,6 @@ header .showcase .showcase-text h3 {
 }
 
 .contact-me {
-  scroll-snap-align: start;
   padding: 2rem;
   display: flex;
   justify-content: center;

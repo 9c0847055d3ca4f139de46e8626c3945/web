@@ -1,7 +1,6 @@
 //Section 2 Portfolio section
 
 .portfolio {
-    scroll-snap-align: start;
     padding: 1rem;
     @include flex-center;
     flex-direction: column;

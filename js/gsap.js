@@ -62,7 +62,7 @@ gsap.from('.project', {
     scrollTrigger: '.projects',
     y: '50px',
     ease: 'power',
-    delay: 1.5,
+    delay: 0.5,
     opacity: 0,
     stagger: 0.2
 })
